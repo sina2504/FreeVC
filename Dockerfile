@@ -11,10 +11,11 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
-# Install system-level dependencies (ffmpeg & audio libs)
+# Install system-level dependencies (incl. gcc for building webrtcvad)
 RUN apt-get update && apt-get install -y \
-    ffmpeg \
     libsndfile1 \
+    build-essential \
+    gcc \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
