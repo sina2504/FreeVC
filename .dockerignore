@@ -45,3 +45,6 @@ docker-compose.yml
 # Optional: ignore audio or large raw data files
 *.wav
 data/
+
+# Optional: ignore test files
+test-project-files/

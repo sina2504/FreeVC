@@ -1,0 +1,1 @@
+Put all files of this folder (test-project-files) out of the FreeVC folder (previous directory) and then run them.
