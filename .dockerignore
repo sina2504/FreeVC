@@ -27,6 +27,7 @@ dist/
 build/
 
 # Docker files you don’t want in the image (if any)
+Dockerfile
 Dockerfile.dev
 docker-compose.yml
 
