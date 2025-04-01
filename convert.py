@@ -96,7 +96,7 @@ if __name__ == "__main__":
     # Load the model and related components once
     hps, net_g, cmodel, smodel = load_models(args.hpfile, args.ptfile)
     
-    # For demonstration, assume you have two WAV files in memory.
+    # For testing, assume there is two WAV files in memory.
     # In practice, these buffers can be provided directly (e.g., via a web API).
     source_path = "example_source.wav"
     target_path = "example_target.wav"
@@ -117,6 +117,6 @@ if __name__ == "__main__":
     # Convert audio entirely in-memory
     output_buffer = convert_audio_buffer(source_buffer, target_buffer, title, hps, net_g, cmodel, smodel, use_timestamp=args.use_timestamp)
     
-    # For demonstration, write the output buffer to disk (optional)
+    # For demonstration, write the output buffer to disk
     with open("output_sample.wav", "wb") as f:
         f.write(output_buffer.read())
